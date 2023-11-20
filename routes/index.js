@@ -54,6 +54,9 @@ router.get('/users/webFruit', function(req, res) {
 
 /* My project. */
 
+router.get('/users/project', function(req, res) {
+  return res.sendFile("index.html", {root: path.join('public','project')});
+});
 
 
 

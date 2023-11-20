@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELL</title>
+    <link type="text/css" rel="stylesheet" href="/cssPro/project.css" nonce="">
+    <script defer src="/jsPro/project.js"></script>
+    <script defer src="/jsPro/dikduk.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="../imagesPro/isr.png" alt="תיאור תמונה" class="flag">
+        <img  src="../imagesPro/usa.png" alt="תיאור תמונה" class="flag">
+        לימוד השפה האנגלית
+        <img  src="../imagesPro/logo.png" alt="תיאור תמונה" class="logo">
+        <div class="menu">
+            <a href="proCat.html">אוצר מילים</a>
+            <a href="dikduk.html">כללי דקדוק</a>
+            <a href="ind.html">chat</a>
+            <a href="project.html">התנתק</a>
+        </div>
+    </div>
+
+   
+<div class="ContainerDikduk">
+    <div class="center-browser">
+        <button onclick="showText('text8')"class="folder"> 
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            אות גדולה
+        </button> 
+
+        <button onclick="showText('text1')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            כינויים
+        </button>
+
+        <button onclick="showText('text2')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+             מאמרים
+        </button>
+
+        <button onclick="showText('text3')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            מילות שאלה  
+        </button>
+        
+        <button onclick="showText('text4')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            have or has
+        </button>
+
+        <button onclick="showText('text5')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            be הפועל
+        </button> 
+
+        <button onclick="showText('text51')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            in/at/on
+        </button>  
+
+        <button onclick="showText('text7')"class="folder"> 
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            יחיד ורבים
+        </button> 
+
+        <button onclick="showText('text6')"class="folder">
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            הזמנים
+        </button>  
+
+        <button onclick="showText('text9')"class="folder"> 
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            מילות יחס
+        </button>
+
+        <button onclick="showText('text10')"class="folder"> 
+            <img src="../imagesPro/folder.png"alt="אייקון 1">
+            מילות קישור
+        </button>
+    </div>
+
+    <div id="text1" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl">כינויים<h1>Pronouns</h1> </div>
+                <div class="ctext">
+                    <table style="margin-bottom: 20px;">
+                        <tr style="white-space: nowrap;">
+                            <th>מספר גוף</th>
+                            <th> כינויים בנושא<br> (Subject Pronouns) </th>
+                            <th> כינוי אובייקט<br> (Object Pronouns) </th>
+                            <th>תארי השייכות <br> (Possessive Adjectives) </th>
+                            <th> כינויי שייכות<br> (Possessive Pronouns) </th>
+                            <th> כינויי גוף רפלקסיביים <br> (Reflexive Pronouns) </th>
+                        </tr>
+                        <tr>
+                            <td style="white-space: pre-line; font-size: 11px;  font-weight: bold; ">גוף ראשון  
+
+                                גוף שני
+
+                                גוף שלישי (זכר)
+
+                                גוף שלישי (נקבה)
+
+                                גוף שלישי (דבר)
+
+                                גוף ראשון (רבים)
+
+                                גוף שני (רבים)
+
+                                גוף שלישי (רבים)
+                            </td>
+                            
+                            <td style="text-align: left;">
+                                <li>I           <div style="font-size: 13px; display: inline;">(אני)</div></li>
+                                <li>you         <div style="font-size: 13px; display: inline;">(את/ה)</div></li>
+                                <li>he          <div style="font-size: 13px; display: inline;">(הוא)</div></li>
+                                <li>she         <div style="font-size: 13px; display: inline;">(היא)</div></li>
+                                <li>it          <div style="font-size: 13px; display: inline;">(זה)</div></li>
+                                <li>we          <div style="font-size: 13px; display: inline;">(אנחנו)</div></li>
+                                <li>you         <div style="font-size: 13px; display: inline;">(אתם/ן)</div></li>
+                                <li>they        <div style="font-size: 13px; display: inline;">(הם/ן)</div></li>
+                            </td>
+
+                            <td style="text-align: left;">
+                                <li>me           <div style="font-size: 13px; display: inline;">(אותי)</div></li>
+                                <li>you         <div style="font-size: 13px; display: inline;">(אותך)</div></li>
+                                <li>him          <div style="font-size: 13px; display: inline;">(אותו)</div></li>
+                                <li>her         <div style="font-size: 13px; display: inline;">(אותה)</div></li>
+                                <li>it          <div style="font-size: 13px; display: inline;">(את זה)</div></li>
+                                <li>us          <div style="font-size: 13px; display: inline;">(אותנו)</div></li>
+                                <li>you         <div style="font-size: 13px; display: inline;">(אתכם/ן)</div></li>
+                                <li>them        <div style="font-size: 13px; display: inline;">(אותם/ן)</div></li>
+                            </td>
+
+                            <td style="text-align: left;">
+                                <li>my           <div style="font-size: 13px; display: inline;">(שלי)</div></li>
+                                <li>your         <div style="font-size: 13px; display: inline;">(שלך)</div></li>
+                                <li>his          <div style="font-size: 13px; display: inline;">(שלו)</div></li>
+                                <li>her         <div style="font-size: 13px; display: inline;">(שלה)</div></li>
+                                <li>its          <div style="font-size: 13px; display: inline;">(של זה)</div></li>
+                                <li>our          <div style="font-size: 13px; display: inline;">(שלנו)</div></li>
+                                <li>your         <div style="font-size: 13px; display: inline;">(שלכם/ן)</div></li>
+                                <li>their        <div style="font-size: 13px; display: inline;">(שלהם/ן)</div></li>
+                            </td>
+
+                            <td style="text-align: left;">
+                                <li>mine        <div style="font-size: 13px; display: inline;">(שלי)</div></li>
+                                <li>yours       <div style="font-size: 13px; display: inline;">(שלך)</div></li>
+                                <li>his         <div style="font-size: 13px; display: inline;">(שלו)</div></li>
+                                <li>hers        <div style="font-size: 13px; display: inline;">(שלה)</div></li><br>
+                                <li>ours        <div style="font-size: 13px; display: inline;">(שלנו)</div></li>
+                                <li>yours       <div style="font-size: 13px; display: inline;">(שלכם/ן)</div></li>
+                                <li>theirs      <div style="font-size: 13px; display: inline;">(שלהם/ן)</div></li>
+                            </td>
+
+                            <td style="text-align: left;">
+                                <li>myself          <div style="font-size: 13px; display: inline;">(עצמי)</div></li>
+                                <li>yourself        <div style="font-size: 13px; display: inline;">(עצמך)</div></li>
+                                <li>himself         <div style="font-size: 13px; display: inline;">(עצמו)</div></li>
+                                <li>herself         <div style="font-size: 13px; display: inline;">(עצמה)</div></li>
+                                <li>itself          <div style="font-size: 13px; display: inline;">(זה עצמו)</div></li>
+                                <li>ourselves       <div style="font-size: 13px; display: inline;">(עצמנו)</div></li>
+                                <li>yourselves       <div style="font-size: 13px; display: inline;">(עצמכם/ן)</div></li>
+                                <li>themselves      <div style="font-size: 13px; display: inline;">(עצמם)</div></li>
+                            </td>                            
+                        </tr>
+                    </table>
+                </div>
+                <div class="ctext rtl"><h2> כינויי הצבעה</h2> </div>
+                <div class="ctext">
+                    <table>
+                        <tr>
+                            <th>מילה</th>
+                            <th>הסבר</th>
+                            <th>דוגמה</th>
+                        </tr>
+                        <tr>
+                            <td><strong>This</strong></td>
+                            <td>מציין אובייקט במרחק קרוב</td>
+                            <td><strong>This</strong> car is beautiful (המכונית הזאת יפה)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>That</strong></td>
+                            <td>מציין אובייקט במרחק רחוק</td>
+                            <td>and <strong>that</strong> car is beautiful (והמכונית ההיא יפה)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>These</strong></td>
+                            <td>מציין מספר אובייקטים במרחק קרוב</td>
+                            <td>and <strong>these</strong> cars are also beautiful (והמכוניות האלה גם יפות)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Those</strong></td>
+                            <td>מציין מספר אובייקטים במרחק רחוק</td>
+                            <td>and <strong>those</strong> cars are beautiful. (והמכוניות ההם יפות)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text2" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl">מאמרים<h1>Articles</h1> </div>
+                <div class="ctext">
+                    <table style="margin-bottom: 20px;">
+                        <tr>
+                            <th>המילה</th>
+                            <th>שימוש</th>
+                            <th>דוגמאות</th>
+                        </tr>
+                        <tr>
+                            <td><strong>A</strong></td>
+                            <td>כשמדברים על משהו כללי</td>
+                            <td>
+                                <li style="text-align: left;"> I saw<strong> a </strong>car in the parking lot. (ראיתי מכונית בחנייה)<br>
+                                <li style="text-align: left;"> She is<strong> a </strong>doctor. (היא רופאה)<br>
+                                <li style="text-align: left;"> He wants to buy<strong> a </strong>house in the suburbs. (הוא רוצה לקנות בית בפרברים)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>An</strong></td>
+                            <td> כשמדברים על משהו כללי  <br>
+                                a, e, i, o, u שמתחיל באותיות ניקוד </td>
+                            <td>
+                                <li style="text-align: left;"> I found<strong> an </strong> old book on the shelf. (מצאתי ספר ישן על המדף)<br>
+                                <li style="text-align: left;"> She is<strong> an </strong> actress in a famous theater. (היא שחקנית בתיאטרון מפורסם)<br>
+                                <li style="text-align: left;"> He needs<strong> an </strong> umbrella because it's raining. (הוא צריך מטריה כי זה גשם)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>The</strong></td>
+                            <td>ה"א הידיעה - כשמדברים על משהו ספציפי</td>
+                            <td>
+                                <li style="text-align: left;"> I saw<strong> the </strong>cat that was in the tree. (ראיתי את החתול שהיה בעץ)<br>
+                                <li style="text-align: left;"><strong>The </strong>movie we watched last night was great. (הסרט שראינו אמש היה נהדר)<br>
+                                <li style="text-align: left;"> She found<strong> the </strong>keys she had lost. (היא מצאה את המפתחות שאיבדה)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="center-browser rtl">
+                    <h2>
+                        מתי נשתמש ב- a / an / the ומתי לא?
+                    </h2>
+                    
+                </div>
+
+                <div class="ctext rtl">
+                    <table>
+                        <tr>
+                            <th>דוגמאות</th>
+                            <th>הסבר</th>
+                            <th>שם</th>
+                            <th>סוג</th>
+                        </tr>
+
+                        <tr>
+                            <td class="ltr" style="text-align: left;">
+                                <li>I have  <strong>a</strong>  car. (יש לי מכונית)</li>   
+                                <li>I have cars. (יש לי מכוניות)</li>
+                            </td>
+                            <td style="text-align: right; font-size: 15px;">
+                                בשמות נספרים, נשתמש ב a או an כאשר רוצים להתייחס לדבר אחד או לרעיון אחד בלבד.<br> <br>
+                                כאשר משתמשים ברבים (plural), אז אין שימוש ב a או an.
+                            </td>
+                            <td class="ltr" style="text-align: left;">
+                                <li>Car (מכונית)</li>
+                                <li>Book (ספר)</li>
+                                <li>Dog (כלב)</li>
+                            </td>
+                            <td>נספר</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ltr" style="text-align: left; white-space: nowrap;">
+                                <li>I need water. (אני צריך מים)</li>         
+                                <li>He gave me information. (הוא נתן לי מידע) </li>
+                            </td>
+                            <td style="text-align: right; font-size: 15px;">
+                                בשמות לא נספרים, לא נשתמש ב a או an כלל, <br>
+                                ובכלל לא נשתמש ב the אלא אם יש סיבה מסוימת להתייחס למשהו מסוים בהקשר הנתון.
+                            </td>
+                            <td class="ltr" style="white-space: nowrap; text-align: left;">
+                                <li>Water (מים)</li>
+                                <li>Information (מידע)</li>
+                                <li>Air (אוויר)</li>
+                            </td>
+                            
+                            <td>לא נספר</td>
+                        </tr>
+                    </table>       
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="text3" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+            <div class="ctext"> <h2>מילות שאלה</h2>  </div>
+            <table>
+                <tr>
+                    <th style="padding:  10px 15px">What</th>
+                    <th style="padding:  10px 15px">When</th>
+                    <th style="padding:  10px 15px">Where</th>
+                    <th style="padding:  10px 15px">Who</th>
+                    <th style="padding:  10px 15px">Whom</th>
+                    <th style="padding:  10px 15px">Which</th>
+                    <th style="padding:  10px 15px">Whose</th>
+                    <th style="padding:  10px 15px">Why</th>
+                    <th style="padding:  10px 15px">How</th>
+                    <th style="padding:  10px 15px; white-space: nowrap;">How many</th>
+                    <th style="padding:  10px 15px; white-space: nowrap;">How much</th>
+                    <th style="padding:  10px 15px; white-space: nowrap;">How long</th>
+                    <th style="padding:  10px 15px; white-space: nowrap;">How far</th>
+                </tr>
+                <tr>
+                    <td>מה</td>
+                    <td>מתי</td>
+                    <td>איפה</td>
+                    <td>מי</td>
+                    <td>מי</td>
+                    <td>איזה</td>
+                    <td>של מי</td>
+                    <td>למה</td>
+                    <td>איך</td>
+                    <td>כמה(כמות)</td>
+                    <td style="white-space: nowrap;">כמה(כמות כסף)</td>
+                    <td>כמה זמן</td>
+                    <td>כמה רחוק</td>
+                </tr>
+            </table>
+            
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text4" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl"> <h2>מתי נשתמש ב - have or has ?</h2> </div>
+                <div class="ctext">
+                    <table>
+                        <tr>
+                            <th>משמעות</th>
+                            <th>זמן</th>
+                            <th>גוף</th>
+                            <th>דוגמה</th>
+                        </tr>
+                        <tr>
+                            <td><strong>have</strong></td>
+                            <td>הווה</td>
+                            <td>I / You / We / They</td>
+                            <td style="text-align: left;">I <strong>have</strong> a car (יש לי מכונית)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>has</strong></td>
+                            <td>הווה</td>
+                            <td>He / She / It</td>
+                            <td style="text-align: left;">he <strong>has</strong> a car (יש לו מכונית)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>had</strong></td>
+                            <td>עבר</td>
+                            <td>כל הגופים</td>
+                            <td style="text-align: left;">I <strong>had</strong> a car (היה לי מכונית)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>will have</strong></td>
+                            <td>עתיד</td>
+                            <td>כל הגופים</td>
+                            <td style="text-align: left;">I <strong>will have</strong> a car (יהיה לי מכונית)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text5" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl"> <h2>איך נשתמש בפועל be באיזה גוף נשתמש ובאיזה זמן?</h2> </div>
+                <div class="ctext">
+                    <table>
+                        <tr>
+                            <th>פועל</th>
+                            <th>זמן</th>
+                            <th>שימוש</th>
+                            <th>דוגמאות</th>
+                        </tr>
+                        <tr>
+                            <td><strong>am</strong></td>
+                            <td>הווה</td>
+                            <td>I am</td>
+                            <td style="text-align: left;">
+                                <li>I <strong>am</strong> a student. (אני סטודנט)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>is</strong></td>
+                            <td>הווה</td>
+                            <td>He / She / It is</td>
+                            <td style="text-align: left;">
+                               <li> She <strong>is</strong> a doctor. (היא רופאה)</li>
+                               <li>The sky <strong>is</strong> blue. (השמיים כחולים)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>are</strong></td>
+                            <td>הווה</td>
+                            <td>You / We / They are</td>
+                            <td style="text-align: left;">
+                                <li>We <strong>are</strong> friends. (אנחנו חברים)</li>
+                                <li>How <strong>are</strong> you? (מה שלומך)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>was</strong></td>
+                            <td>עבר</td>
+                            <td>I / He / She / It was</td>
+                            <td style="text-align: left;">
+                                <li>I <strong>was</strong> at the store. (אני הייתי בחנות)</li>
+                                <li>it <strong>was</strong> late. (היה מאוחר)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>were</strong></td>
+                            <td>עבר</td>
+                            <td>You / We / They were</td>
+                            <td style="text-align: left;">
+                                <li>They <strong>were</strong> students. (הם היו סטודנטים)</li>
+                                <li>We <strong>were</strong> at the party. (אנחנו היינו במסיבה)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>be</strong></td>
+                            <td>כללי</td>
+                            <td>במבני משפט מורכבים או במקרים מיוחדים</td>
+                            <td style="text-align: left;">
+                                <li>Let it <strong>be</strong>. (תן לזה להיות)</li>
+                                <li>To be or not to <strong>be</strong>. (להיות או לא להיות)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>being</strong></td>
+                            <td>כללי</td>
+                            <td>במקרים של תהליך רגעי או פרטי</td>
+                            <td style="text-align: left;">
+                                <li>She is <strong>being</strong> careful. (היא דואגת להיות זהירה)</li>
+                                <li>They are <strong>being</strong> silly. (הם משתוללים)</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>been</strong></td>
+                            <td>כללי</td>
+                            <td>בהופעה מחודשת של "be" במשפטים פרטיים</td>
+                            <td style="text-align: left;">
+                                <li>I have <strong>been</strong> there. (אני הייתי שם)</li>
+                                <li>She had <strong>been</strong> to France. (היא הייתה בצרפת)</li>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text51" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl"> <h2>    In/ At / on  מה השימוש הנכון ?    </h2> </div>
+                <div class="ctext">
+                    <table>
+                        <tr>
+                            <th>מילה</th>
+                            <th>שימוש</th>
+                            <th>הסבר</th>
+                            <th>דוגמה</th>
+                        </tr>
+                        <tr>
+                            <td><strong>In</strong></td>
+                            <td>זמן</td>
+                            <td>משמש לציון זמן מסוים ביום, חודש, שנה ועונת השנה</td>
+                            <td style="text-align: left;">See you <strong>in</strong> the spring season. (נתראה בעונת האביב)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>In</strong></td>
+                            <td>מקום</td>
+                            <td>משמש גם כאשר מתייחסים למקום מסוים</td>
+                            <td style="text-align: left;">The cat is <strong>in</strong> the house. (החתול בבית)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>At</strong></td>
+                            <td>זמן</td>
+                            <td>משמש לציון שעה מדויקת ביום</td>
+                            <td style="text-align: left;">Meeting <strong>at</strong> 10:00 AM. (יש לי פגישה בשעה 10 בבוקר)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>At</strong></td>
+                            <td>מקום</td>
+                            <td>משמש גם כאשר מתייחסים למקום מסוים כנקודת יעד או אירוע מסוים</td>
+                            <td style="text-align: left;">I'll meet you <strong>at</strong> the park. (אני אפגש איתך בפארק)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>On</strong></td>
+                            <td>זמן</td>
+                            <td>משמש לציון יום מסויים בשבוע או בחודש, כמו גם תאריכים מסוימים</td>
+                            <td style="text-align: left; white-space: nowrap;">My birthday is <strong>on</strong> October 10th. (יומולדתי הוא ב-10 באוקטובר)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>On</strong></td>
+                            <td>יום</td>
+                            <td>משמש לציון ימי השבוע</td>
+                            <td style="text-align: left;">Meeting <strong>on</strong> Wednesday. (יש לי פגישה ביום רביעי)</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text6" class="hidden">
+        <div class="ctext rtl line-break"> זמנים <h1>Tenses</h1> </div>
+        <div class="center-browser">
+            <table style="white-space: nowrap;">
+                <tr>
+                    <th>אנגלית</th>
+                    <th>עברית</th>
+                    <th>הסבר</th>
+                    <th>דוגמה</th>
+                    <th>למד בהרחבה</th>
+                </tr>
+                <tr style="background-color: rgba(0, 0, 255, 0.155);">
+                    <td>
+                        Present <br>
+                        Simple
+                    </td>
+                    <td style="text-align: center;">הווה פשוט</td>
+                    <td style="text-align: center;">
+                        ,מציין פעולה קבועה<br>
+                        מציאות או סטטוס נוכחי
+                    </td>
+                    <td style="text-align: left;">  I learn English <br>
+                         (אני לומד אנגלית)    
+                    </td>
+                    <td style="border: none;"><button onclick="showText('text11')"class="buttomClickme">לחץ עליי</button></td>
+                </tr>
+                <tr style="background-color: rgba(0, 0, 255, 0.155);">
+                    <td>
+                        Present <br>
+                        Progressive
+                    </td>
+                    <td style="text-align: center;">הווה מתמשך</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שקורה כרגע<br>
+                         או בתקופת זמן מוגבלת בהווה
+                    </td>
+                    <td style="text-align: left;">  I am currently learning English <br>
+                        (כרגע אני לומד אנגלית)
+                    </td>  
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(0, 0, 255, 0.155);">
+                    <td>
+                        Present <br>
+                         Perfect
+                          Simple
+                    </td>
+                    <td style="text-align: center;">הווה מושלם פשוט</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שהתרחשה בעבר <br>
+                         והשפע שלה נמשך עד הווה
+                    </td>
+                    <td style="text-align: left;">  I learned a lot of English words <br>
+                            (למדתי הרבה מילים באנגלית)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(0, 0, 255, 0.155);">
+                    <td>
+                        Present <br>
+                         Perfect <br>
+                          Progressive
+                    </td>
+                    <td style="text-align: center;">הווה מושלם מתמשך</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שהתרחשה בעבר <br>
+                        והיא מתמשכת עד לרגע מסוים בהווה
+                    </td>
+                    <td style="text-align: left;">  I have been learning English for a year <br>
+                            (אני לומד אנגלית כבר שנה)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(255, 0, 0, 0.155);">
+                    <td>
+                        Past <br>
+                         Simple
+                    </td>
+                    <td style="text-align: center;">עבר פשוט</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שקרתה בעבר וסיימה
+                    </td>
+                    <td style="text-align: left;"> 
+                        I learned English              <br>
+                    (למדתי אנגלית)
+                    </td>
+                    <td style="border-bottom: none;"><button onclick="showText('text12')"class="buttomClickme">לחץ עליי</button></td>
+                </tr>
+                <tr style="background-color: rgba(255, 0, 0, 0.155);">
+                    <td>
+                        Past <br>
+                        Progressive
+                    </td>
+                    <td style="text-align: center;">עבר מתמשך</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שקרתה בעבר<br>
+                         במשך זמן מוגבל
+                    </td>
+                    <td style="text-align: left;"> 
+                        I was learning English when I was in school            <br>
+                        (למדתי אנגלית כשהייתי בבית הספר)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(255, 0, 0, 0.155);">
+                    <td>
+                        Past <br>
+                         Perfect
+                          Simple
+                    </td>
+                    <td style="text-align: center;">עבר מושלם פשוט</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שקרתה בעבר <br>
+                        וסיימה לפני פעולה אחרת בעבר
+                    </td>
+                    <td style="text-align: left;"> 
+                        By the time the teacher came I had learned a few words            <br>
+                    (עד שהמורה הגיעה למדתי כמה מילים)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(255, 0, 0, 0.155);">
+                    <td>
+                        Past <br>
+                        Perfect <br>
+                        Progressive
+                    </td>
+                    <td style="text-align: center;">עבר מושלם מתמשך</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שקרתה בעבר <br>
+                        והיא נמשכה עד לרגע מסוים בעבר
+                    </td>
+                    <td style="text-align: left;"> 
+                        I studied for many hours until the night got dark                 <br>
+                        (למדתי שעות רבות עד שהלילה החשיך)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(0, 255, 55, 0.155);">
+                    <td>
+                        Future <br>
+                         Simple
+                    </td>
+                    <td style="text-align: center;">עתיד פשוט</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שתקרה בעתיד
+                    </td>
+                    <td style="text-align: left;"> 
+                        I will learn English               <br>
+                    (אני אלמד אנגלית)
+                    </td>
+                    <td style="border-bottom: none;"><button onclick="showText('text13')"class="buttomClickme">לחץ עליי</button></td>
+                </tr>
+                <tr style="background-color: rgba(0, 255, 55, 0.155);">
+                    <td>
+                        Future <br>
+                         Progressive
+                    </td>
+                    <td style="text-align: center;">עתיד מתמשך</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שתקרה בעתיד<br>
+                         במשך זמן מוגבל
+                    </td>
+                    <td style="text-align: left;"> 
+                        I will be studying for the exam tomorrow               <br>
+                         (אני אלמד למבחן מחר)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(0, 255, 55, 0.155);">
+                    <td>
+                        Future <br>
+                        Perfect 
+                        Simple
+                    </td>
+                    <td style="text-align: center;">עתיד מושלם פשוט</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שתקרה בעתיד<br>
+                         ותסתיים לפני פעולה אחרת בעתיד
+                    </td>
+                    <td style="text-align: left;"> 
+                        I will have learned the new language by next year <br>
+                        (אני אלמד את השפה החדשה עד שנה הבאה)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+                <tr style="background-color: rgba(0, 255, 55, 0.155);">
+                    <td>
+                        Future <br>
+                         Perfect <br>
+                         Progressive
+                    </td>
+                    <td style="text-align: center;">עתיד מושלם מתמשך</td>
+                    <td style="text-align: center;">
+                        מציין פעולה שתקרה בעתיד<br>
+                         ותמשיך עד לרגע מסוים בעתיד
+                    </td>
+                    <td style="text-align: left;"> 
+                        I will have been studying for two hours by the time you call         <br>
+                        (אני אלמד שעתיים עד שתתקשר)
+                    </td>
+                    <td style="border: none;">                  </td>
+                </tr>
+            </table>  
+        </div>
+    </div> 
+
+        <div id="text11" class="hidden">
+            <div class="center-browser titltime"> Present Simple  (הווה פשוט)</div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u> אנו משתמשים בזמן הזה כדי לתאר פעולות שאנו עושים בדרך כלל או לתאר הרגלים.</span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u> כאשר מדברים בפועל ברבים, הפועל לא משתנה ונשאר כמו שהוא.</span>
+                
+                    <span>במקרים בהם מדובר ביחיד (רק ל- he, she, it), יש להוסיף לפועל es, s או ies על פי הכללים הבאים:</span>
+                    
+                    <li>לפועל רגיל שאין בו שום דבר מיוחד, נוסיף work > work<strong>s</strong> :s </li>
+                    <li>לפועל שמסתיים באות שורקת (s, z, x, ch, sh, o) נוסיף watch > watch<strong>es</strong> :es</li>
+                    <li>לפועל שמסתיים באות y ולפניו אות ניקוד (a, e, o, u, i) נוסיף play > play<strong>s</strong> :s</li>
+                    <li>לפועל שמסתיים באות y ולפניו אות רגילה, נמחק את  y ונוסיף study > stud<strong>ies</strong> :ies</li>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.We play football once a week (אנחנו משחקים כדורגל פעם בשבוע)</li>
+                    <li>.David plays soccer every day (דוד משחק כדורגל כל יום)</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>
+                    נשתמש במילה do , לגופים (I, you, we, they).</span>
+                    <span>ובמילה does , לגוף השלישי ביחיד (he, she, it).</span>
+                    <span>הפועל לא משתנה ונשאר כמו שהוא.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li >?Do we play football once a week (האם אנחנו משחקים כדורגל פעם בשבוע)</li>
+                    <li>?Does David play soccer every day (האם דוד משחק כדורגל כל יום)</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>
+                    נשתמש במילה don't , לגופים (I, you, we, they).</span>
+                    <span>ובמילה doesn't לגוף השלישי ביחיד (he, she, it).</span>
+                    <span>הפועל לא משתנה ונשאר כמו שהוא.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.We don't play football once a week (אנחנו לא משחקים כדורגל פעם בשבוע)</li>
+                    <li>.David doesn't play soccer every day (דוד לא משחק כדורגל כל יום)</li>
+                </div>
+
+            </div>
+
+            <div class="center-browser titltime"> Present Progressive (הווה מתמשך)  </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u> אנו משתמשים בזמן הזה כדי לתאר פעולות שאנו עושים ברגע זה.</span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u> לכל הגופים, יחיד ורבים, נוסיף את הפועל am, is, are) be) ולפועל נוסיף ing לפי הכללים הבאים:</span>
+                    
+                    <li> לפועל רגיל, שאין בו שום דבר מיוחד נוסיף work > work<strong>ing</strong>   :ing      </li>
+                    <li> לפועל שמסתיים באות e נמחק את e ונוסיף write  > writ<strong>ing</strong>  :ing        </li>
+                    <li> לפועל שמסתיים ב-ie נמחק את ie ונוסיף y+ing.
+
+                        יש רק שלושה פעלים כאלה באנגלית:
+
+                        lie > ly<strong>ing</strong>
+
+                        die > dy<strong>ing</strong>
+
+                        tie > ty<strong>ing</strong>      </li>
+                    <li> לפועל שמסתיים (באות רגילה- אות ניקוד -אות רגילה) נכפיל את האות האחרונה ונוסיף Swim > Swimm<strong>ing</strong>  :ing    </li>
+                    <span style="color: rgb(174, 0, 255);  font-weight: bold;">לא נכפיל את האותיות x, y, w גם אם הן עונות על הכללים האלה.</span>
+
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>I'm playing now</li>
+                    <li>He is playing now</li>
+                    <li>We are playing now</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u> נוסיף את הפועל be לפני שימוש הגוף המדבר.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>?Am I playing now</li>
+                    <li>?Is he playing now</li>
+                    <li>?Are we playing now</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>  נוסיף not לאחר  הפועל be.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.We are not playing now (אנחנו לא משחקים עכשיו)</li>
+                    <li>.Aaron is not playing now (אהרון לא משחק עכשיו)</li>
+                </div>
+
+            </div>
+
+            <div class=" center-browser titltime"> Present Perfect Simple (הווה מושלם פשוט) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red; font-weight: bold;">שימוש:</u>   אנו משתמשים בזמן הזה לתיאור פעולות שסיימו לקרות בעבר ונמשך עד הווה או שזמנה לא ידוע.</span>
+                   
+                    <span><u style="color: red; font-weight: bold;">הצורה:</u>  לכל הגופים נוסיף have/has </span>
+
+                    have משמש עבור שאר הגופים (I, you, we, they)
+
+                    has משמש עבור הגוף שלישי ביחיד (he, she, it)
+
+                    <li style="color: rgb(174, 0, 255);">ישנם פעלים יוצאי דופן הם פעלים שאינם עוקבים אחרי חוקים רגילים לשינויי זמן וצורות , יש ללמודם בנפרד.
+                        כמה דוגמאות מתוך רבות:
+                        go - gone
+                        be - been
+                        do - done
+                        have - had
+                        eat - eaten
+                        see - seen
+                    </li>    
+                    <li> פעלים רגילים, נוסיף ied, ed, d  (הכללים מצויינים בזמן Past Simple)</li>
+                  
+                    <span style="color: blue; font-weight: bold;">דוגמאות:</span>
+                    <li> .I have finished my work (סיימתי את העבודה שלי)</li>
+                    <li> .She has visited London (היא ביקרה בלונדון)</li>
+                    <li> .They have never eaten sushi (הם לא אכלו סושי אף פעם)</li>
+
+                    <span><u style="color: red; font-weight: bold;">בשאלה:</u>  נוסיף have/has לפני שימוש בגוף המדבר. </span>
+                
+                    <span style="color: blue; font-weight: bold;">דוגמאות:</span>
+                    <li> ?Have you seen this movie (ראית את הסרט הזה?)</li>
+                    <li> ?Has she ever traveled to Asia (האם היא טסה אי פעם לאסיה?)</li>
+                    <li> ?Have they visited that museum before (האם הם ביקרו במוזיאון ההוא פעם?)</li>
+
+                    <span><u style="color: red; font-weight: bold;">בשלילה:</u> נוסיף not אחרי have/has.</span>
+
+                    <span style="color: blue; font-weight: bold;">דוגמאות:</span>
+                    <li> .I have not (haven't) seen that movie (אני לא ראיתי את הסרט ההוא)</li>
+                    <li> .She has not (hasn't) visited the new museum (היא לא ביקרה במוזיאון החדש)</li>
+                    <li> .They haven't traveled to Europe (הם לא טסו לאירופה)</li>
+
+                </div>
+            
+            </div>
+
+            <div class="center-browser titltime"> Present Perfect Progressive (הווה מושלם מתמשך) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u>   אנו משתמשים בזמן הזה לתיאור פעולה שהחלה בעבר וממשיכה גם בעת ההווה, או שהיא הסתיימה לא מזמן.   </span>
+                   
+                    <span><u style="color: red; font-weight: bold;">הצורה:</u></span>
+                    <li> משתמשים ב- have או has בהתאם לגוף ולמספר. </li>
+                    <li> מוסיפים been לאחריו. </li>
+                    <li> מוסיפים לפעולה ing. (הכללים מצויינים בזמן Present Progressive) </li>
+
+                    <span style="color: blue; font-weight: bold;">דוגמאות:</span>
+                    <li>  .I have been working for three hours (עבדתי שלוש שעות)  </li>
+                    <li>  .She has been studying all day (היא למדה כל היום)  </li>
+                    <li>  .They have been playing soccer since morning (הם משחקים כדורגל מאז הבוקר)  </li>
+
+                    <span ><u style="color: red; font-weight: bold;">בשאלה:</u>  ?Have/ has + subject + been  + verb +  ing</span>
+                    <span style="color: blue; font-weight: bold;">דוגמה:</span>
+                    <li> ?Have you been studying for the exam  (האם למדת למבחן)     </li>
+
+                    <span><u style="color: red; font-weight: bold;">בשלילה:</u> Subject + have/had not + been  + verb +  ing </span>
+                    <span style="color: blue; font-weight: bold;">דוגמה:</span>
+                    <li> .She hasn't been working here for very long  (היא לא עובדת פה כבר הרבה זמן)       </li>
+   
+                </div>
+            </div>
+        </div>
+
+        <div id="text12" class="hidden">
+            <div class="center-browser titltime"> Past Simple (עבר פשוט) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u> אנו משתמשים בזמן הזה כדי לתאר פעולות שהתרחשו והסתיימו בעבר.</span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u> לכל הגופים נוסיף לפועל ied, ed, d לפי הכללים הבאים:</span>
+                    
+                    <li>לפועל רגיל שאין בו שום דבר מיוחד, נוסיף work > work<strong>ed</strong> :ed </li>
+                    <li>לפועל שמסתיים ב e נוסיף write > write<strong>d</strong> :d</li>
+                    <li>לפועל שמסתיים באות y ולפניו אות ניקוד (a, e, o, u, i) נוסיף play > play<strong>ed</strong> :ed</li>
+                    <li>לפועל שמסתיים באות y ולפניו אות רגילה, נמחק את  y ונוסיף study > stud<strong>ied</strong> :ied</li>
+                    <li> לפועל שמסתיים (באות רגילה- אות ניקוד -אות רגילה) נכפיל את האות האחרונה ונוסיף hop > hopp<strong>ed</strong>  :ed    </li>
+                    <span style="color: rgb(174, 0, 255);  font-weight: bold;">לא נכפיל את האותיות x, y, w גם אם הן עונות על הכללים האלה.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.I worked until 10 at night yesterday (אתמול עבדתי עד 10 בלילה)</li>
+                    <li>.Gabriel played snooker last week (גבריאל שיחק סנוקר בשבוע שעבר)</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u> נוסיף did לפני שימוש בגוף המדבר. הפועל לא משתנה ונשאר כמו שהוא.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li >?Did you work late yesterday (האם עבדת עד מאוחר אתמול?)</li>
+                    <li>?Did Gabriel play snooker last week? (האם גבריאל שיחק סנוקר בשבוע שעבר?)</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u> נוסיף didn't לכל הגופים. הפועל לא משתנה ונשאר כמו שהוא.</span>
+                 
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.I didn't work late (לא עבדתי מאוחר)</li>
+                    <li>.He didn't play poker (הוא לא שיחק פוקר)</li>
+                </div>
+            </div>
+
+
+
+
+            <div class="center-browser titltime"> Past Progressive (עבר מתמשך) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u> אנו משתמשים בזמן הזה כדי לתאר פעולות שאנו עושים ברגע זה.</span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u> לכל הגופים, יחיד ורבים, נוסיף את הפועל was, were) be) ולפועל נוסיף ing לפי הכללים הבאים:</span>
+                    
+                    <li> לפועל רגיל, שאין בו שום דבר מיוחד נוסיף work > work<strong>ing</strong>   :ing      </li>
+                    <li> לפועל שמסתיים באות e נמחק את e ונוסיף write  > writ<strong>ing</strong>  :ing        </li>
+                    <li> לפועל שמסתיים ב-ie נמחק את ie ונוסיף y+ing.
+
+                        יש רק שלושה פעלים כאלה באנגלית:
+
+                        lie > ly<strong>ing</strong>
+
+                        die > dy<strong>ing</strong>
+
+                        tie > ty<strong>ing</strong>      </li>
+                    <li> לפועל שמסתיים (באות רגילה- אות ניקוד -אות רגילה) נכפיל את האות האחרונה ונוסיף Swim > Swimm<strong>ing</strong>  :ing    </li>
+                    <span style="color: rgb(174, 0, 255);  font-weight: bold;">לא נכפיל את האותיות x, y, w גם אם הן עונות על הכללים האלה.</span>
+
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.I was playing tennis yesterday (שיחקתי טניס אתמול)</li>
+                    <li>.He was playing the guitar at the party last night (הוא ניגן בגיטרה במסיבה אתמול בלילה)</li>
+                    <li>.We were playing board games when the rain started (שיחקנו במשחקי לוח כשהגשם התחיל)</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u> נוסיף את הפועל be לפני שימוש הגוף המדבר.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>?Were you playing</li>
+                    <li>?Was he playing</li>
+                    <li>?Were we playing</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>  נוסיף not לאחר הפועל be.</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>.He was not playing</li>
+                    <li>.We were not playing</li>
+                </div>
+            </div>
+
+
+
+
+            <div class="center-browser titltime"> Past Perfect Simple (עבר מושלם פשוט) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u>       אנו משתמשים בזמן הזה כדי לתאר פעולה שקרתה בעבר וסיימה לפני פעולה אחרת בעבר.    </span>
+                    <span style="color: rgb(174, 0, 255);  font-weight: bold;">
+                        Past Perfect היא פעולה שקרתה לפני פעולה אחרת בעבר. היא כוללת את had עם פעל בעבר הפשוט, ולפעמים גם תיאורי זמן נוספים. 
+                        הפעולה השנייה, ב-Past Simple, מציינת את הפעולה האחרונה בסיפור.
+                    </span>
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>  .She had already graduated from college by the age of 22 (היא כבר סיימה את הלימודים באוניברסיטה עד גיל 22)  </li>
+                    <li>  .They had eaten dinner when the movie started (הם אכלו את הארוחה כאשר הסרט התחיל)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>      ? Had + subject + V3</span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>  ?Had he met her when they traveled to Europe (האם הוא פגש אותה כאשר הם נסעו לאירופה ?)  </li>
+                    <li>  ?Had they seen that film when it won an award (האם הם ראו את הסרט ההוא כאשר הוא זכה בפרס ?)</li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>     נוסיף not לאחר had      </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>  .He hadn't met her when they traveled to Europe (הוא לא פגש אותה כאשר הם נסעו לאירופה) </li>
+                    <li>  .They hadn't seen that film before it won an award (הם לא ראו את הסרט ההוא לפני שזכה בפרס) </li>
+
+                </div>
+            </div>
+
+            <div class="center-browser titltime"> Past Perfect Progressive (עבר מושלם מתמשך) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u>   אנו משתמשים בזמן הזה כדי לתאר פעולה שקרתה בעבר והיא נמשכה עד לרגע מסוים בעבר.    </span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u>   Subject + had + been + V1 + ing </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  .She had been cooking when the guests arrived (היא הייתה בתהליך בישול כאשר האורחים הגיעו)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>      Had subject + been + V1 + ing ? </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  ?Had they been waiting for long before the concert started (האם הם המתינו הרבה זמן לפני שההופעה החלה ?)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>      Subject + had not +  been + V1 + ing      </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>   .I hadn't been reading that book before it got lost (אני לא קראתי את הספר הזה לפני שאבד)  </li>
+                </div>
+            </div>
+        </div>
+
+        <div id="text13" class="hidden">
+            <div class="center-browser titltime"> Future Simple (העתיד הפשוט) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u> אנו משתמשים בזמן הזה כדי לתאר פעולה שתתרחש בעתיד.  </span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u>  לכל הגופים, יחיד ורבים, נוסיף will  והפועל יישאר ללא שינוי.    </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>  .He will travel to Paris next week (בשבוע הבא הוא ייסע לפריז)</li>
+                    <li>  .I will visit my grandmother next weekend (אני אבקר את סבתא שלי בסוף השבוע הבא) </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>            </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>  ? Will he go to Paris (האם הוא ייסע לפריז ?)  </li>
+                    <li>  ? Will my grandmother be home next weekend? (האם סבתא שלי תהיה  בבית בסוף השבוע הבא ?)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>    נוסיף not  לאחר will        </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמאות:</span>
+                    <li>  .He will not go to Paris (הוא לא ייסע לפריז)  </li>
+                    <li>  .She won't be home next weekend (היא לא תהיה בבית בסוף השבוע הבא)  </li>
+                </div>
+            </div>
+
+            <div class="center-browser titltime"> Future Progressive (עתיד מתמשך) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u>   אנו משתמשים בזמן הזה כדי לתאר פעולה שתתרחש בזמן מוגדר בעתיד.    </span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u>   Subject + will be + V1 + ing </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  .She will be working on the project all night (היא תעבוד על הפרויקט כל הלילה)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>  ? Will + subject + be + V1 + ing  </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  ? Will she be studying for the exam tomorrow (האם היא תלמד למבחן מחר ?)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>  Subject + will not be + V1 + ing      </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  .She will not be studying for the exam tomorrow (היא לא תלמד למבחן מחר)  </li>
+                </div>
+            </div>
+
+            <div class="center-browser titltime"> Future Perfect Simple (עתיד מושלם פשוט) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u>   אנו משתמשים בזמן הזה כדי לתאר פעולה שתקרה בעתיד ותסתיים לפני פעולה אחרת בעתיד	.    </span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u>   Subject + will have + V3  </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  .I will have sent the email before the meeting starts (אשלח את המייל לפני תחילת הפגישה)  </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>  ? Will + subject + have + V3  </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li> ? Will you have finished your assignment before the deadline (האם תסיים את המשימה שלך לפני המוע ?)   </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>  Subject + will not have + V3       </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  .They will not have finished their work before the deadline (הם לא יסיימו את העבודה שלהם לפני המועד)  </li>
+                </div>
+            </div>
+
+            <div class="center-browser titltime"> Future Perfect Progressive (עתיד מושלם מתמשך) </div>
+            <div class="ltext rtl">
+
+                <div style="white-space: pre-line;">
+                    <span><u style="color: red;  font-weight: bold; ">שימוש:</u>   אנו משתמשים בזמן הזה כדי לתאר פעולה שתקרה בעתיד ותמשיך עד לרגע מסוים בעתיד	.    </span>
+
+                    <span><u style="color: red;  font-weight: bold; ">הצורה:</u>   Subject + will have been + V1 + ing  </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li> .By next month she will have been working here for five years (בחודש הבא היא תעבוד כאן כבר חמש שנים)   </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשאלה:</u>  ? Will + subject + have been + V1 + ing  </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li> ? Will she have been working here for five years by next month (האם היא תעבוד כאן חמש שנים עד החודש הבא ?) </li>
+
+                    <span><u style="color: red;  font-weight: bold; ">בשלילה:</u>  Subject + will not have been + V1 + ing       </span>
+
+                    <span style="color: blue;  font-weight: bold;">דוגמה:</span>
+                    <li>  .She will not have been working here for five years by next month (היא לא תעבוד כאן חמש שנים עד החודש הבא)  </li>
+                </div>
+            </div>
+        </div>
+ 
+
+    <div id="text7" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+
+                <div class="ctext rtl"> יחיד ורבים<h1>Singular and plural</h1> </div>
+
+                <div class="ctext rtl">
+                    <table>
+                        <tr>
+                            <th>מילה ברבים</th>
+                            <th>מילה ביחיד</th>
+                            <th>הוספה</th>
+                            <th>סוג שם עצם</th>
+                        </tr>
+                        <tr>
+                            <td>(כדורים) Ball<strong>s</strong></td>
+                            <td>(כדור) Ball</td>
+                            <td>s</td>
+                            <td>שם עצם רגיל</td>
+                        </tr>
+                        <tr>
+                            <td>(קופסאות) Box<strong>es</strong></td>
+                            <td>(קופסה) Box</td>
+                            <td>es</td>
+                            <td>ש"ע שמסתיים באות שורקת (s,z,x,ch,sh,o)</td>
+                        </tr>
+                        <tr>
+                            <td>(צעצועים) Toy<strong>s</strong></td>
+                            <td>(צעצוע) Toy</td>
+                            <td>s</td>
+                            <td>ש"ע שמסתיים ב y ולפניו אות ניקוד (a,e,o,u,i)</td>
+                        </tr>
+                        <tr>
+                            <td>(פרפרים) Butterfl<strong>ies</strong></td>
+                            <td>(פרפר) Butterfly</td>
+                            <td>נמחק את y ונוסיף ies</td>
+                            <td>ש"ע שמסתיים ב y ולפניו אות רגילה</td>
+                        </tr>
+                    </table>
+                </div>  
+
+                <div class="ctext rtl">
+                    <p>
+                        אלה כמה דוגמאות לשמות עצם יוצאי דופן
+                    </p>
+                </div> 
+
+                <div class="ctext rtl">
+                    
+                    <table>
+                        <tr>
+                            <th>רבים - Plural</th>
+                            <th>יחיד - Singular</th>
+                        </tr>
+                        <tr>
+                            <td>People</td>
+                            <td>Person</td>
+                        </tr>
+                        <tr>
+                            <td>Men</td>
+                            <td>Man</td>
+                        </tr>
+                        <tr>
+                            <td>Women</td>
+                            <td>Woman</td>
+                        </tr>
+                        <tr>
+                            <td>Children</td>
+                            <td>Child</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Feet</td>
+                            <td>Foot</td>
+                        </tr>
+                        <tr>
+                            <td>Teeth</td>
+                            <td>Tooth</td>
+                        </tr>
+                        <tr>
+                            <td>Fish</td>
+                            <td>Fish</td>
+                        </tr>
+                            <td>Sheep</td>
+                            <td>Sheep</td>
+                        </tr>
+                        <tr>
+                            <td>Geese</td>
+                            <td>Goose</td>
+                        </tr>
+                        <tr>
+                            <td>Mice</td>
+                            <td>Mouse</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text8" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+
+                <div class="ctext rtl"> <h2>מתי נשתמש באות גדולה ?</h2> </div>
+                <div class="ctext rtl" style="margin-bottom: 20px; display: inline-block;">
+                          
+                    באנגלית משתמשים תמיד באות גדולה לשמות פרטיים, מקומות, חגים, 
+                    ימי שבוע, תחילת משפט, כותרות וכו        <br>
+                    כמו כן 
+                   <div style="color: blue; display: inline; font-family: Courier New; font-weight: bold;"> I  </div>  
+                    תמיד יכתב באות גדולה מכיון שזה נחשב לשם. 
+                    
+                    <br><br><br>
+                    
+                    שיר קליל ומדליק , תהנו :)
+                </div>
+
+                <div class="ctext rtl">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vo2xZskgdP4" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="text9" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl"> מילות יחס<h1>Prepositions</h1> </div>
+
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <th>מילת יחס</th>
+                        <th>תרגום המילה</th>
+                        <th>דוגמאות</th>
+                    </tr>
+                    <tr>
+                        <td><strong>In</strong></td>
+                        <td>בתוך, ב</td>
+                        <td style="text-align: left;">
+                            <li>The book is <strong>in</strong> the bag. (הספר נמצא בתוך התיק)</li>
+                            <li>I live <strong>in</strong> New York. (אני גר בניו יורק)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>On</strong></td>
+                        <td>על</td>
+                        <td style="text-align: left;">
+                            <li>The cup is <strong>on</strong> the table. (הכוס נמצאת על השולחן)</li>
+                            <li>There's a picture <strong>on</strong> the wall. (יש תמונה על הקיר)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Under</strong></td>
+                        <td>מתחת</td>
+                        <td style="text-align: left;">
+                            <li>The cat is <strong>under</strong> the table. (החתול נמצא מתחת לשולחן)</li>
+                            <li>The keys are <strong>under</strong> the books. (המפתחות נמצאות מתחת לספרים)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Next to</strong></td>
+                        <td>ליד</td>
+                        <td style="text-align: left;">
+                            <li>I sit <strong>next to</strong> my friend in class. (אני יושב ליד חברי בכיתה)</li>
+                            <li>The restaurant is <strong>next to</strong> the movie theater. (המסעדה נמצאת ליד הקולנוע)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Between</strong></td>
+                        <td>בין</td>
+                        <td style="text-align: left;">
+                            <li>The cat is <strong>between</strong> the two dogs. (החתול נמצא בין שני הכלבים)</li>
+                            <li>I can't decide <strong>between</strong> these two options. (אני לא יכול להחליט בין שני האפשרויות הללו)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Above</strong></td>
+                        <td>מעל</td>
+                        <td style="text-align: left;">
+                            <li>There's a bird <strong>above</strong> the tree. (יש ציפור מעל העץ)</li>
+                            <li>The painting hangs <strong>above</strong> the fireplace. (הציור תלוי מעל האח)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Below</strong></td>
+                        <td>מתחת</td>
+                        <td style="text-align: left;">
+                            <li>The treasure is buried <strong>below</strong> the ground. (האוצר טמון מתחת לאדמה)</li>
+                            <li>The temperature dropped <strong>below</strong> freezing. (הטמפרטורה ירדה מתחת לנקודת הקיפוא)</li>
+                    </tr>
+                    <tr>
+                        <td><strong>Behind</strong></td>
+                        <td>מאחורי</td>
+                        <td style="text-align: left;">
+                            <li>The car is parked <strong>behind</strong> the building. (הרכב חנה מאחורי הבניין)</li>
+                            <li>She hid <strong>behind</strong> the curtain. (היא התחבאה מאחורי הוילון)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>In front of</strong></td>
+                        <td>לפני</td>
+                        <td style="text-align: left;">
+                            <li>There's a beautiful garden <strong>in front of</strong> the house. (יש גן יפה לפני הבית)</li>
+                            <li>Please stand <strong>in front of</strong> the camera for the photo. (בבקשה, עמדו לפני המצלמה לתמונה)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Beside</strong></td>
+                        <td>ליד</td>
+                        <td style="text-align: left;">
+                            <li>My desk is <strong>beside</strong> the window. (שולחני נמצא ליד החלון)</li>
+                            <li>He sat <strong>beside</strong> his sister at the concert. (הוא ישב ליד אחותו בקונצרט)</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Over</strong></td>
+                        <td>מעל</td>
+                        <td style="text-align: left;">
+                            <li>The plane flew <strong>over</strong> the mountains. (הטיסה עלתה מעל הרי הרים)</li>
+                            <li>Can you put the book <strong>over</strong> there? (?אתה יכול לשים את הספר שם מעל)</li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+        
+        
+    <div id="text10" class="hidden">
+        <div class="center-browser">
+            <div class="inline-block-text">
+                <div class="ctext rtl">מילות קישור<h1>Conjunctions</h1> </div>
+
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <th>מילת קישור</th>
+                        <th>תרגום המילה</th>
+                        <th>דוגמה</th>
+                    </tr>
+                    <tr>
+                        <td><strong>And</strong></td>
+                        <td>ו</td>
+                        <td style="text-align: left;">
+                             I like coffee <strong>and</strong> tea. (אני אוהב קפה ותה)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>But</strong></td>
+                        <td>אבל</td>
+                        <td style="text-align: left;">
+                             It is beautiful <strong>but</strong> expensive. (זה יפה אבל יקר)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Or</strong></td>
+                        <td>או</td>
+                        <td style="text-align: left;">
+                             Pizza <strong>or</strong> pasta for dinner? (?פיצה או פסטה לארוחת ערב)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Of</strong></td>
+                        <td>של</td>
+                        <td style="text-align: left;">
+                            Cup <strong>of</strong> coffee (כוס קפה)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>For</strong></td>
+                        <td>עבור, ל</td>
+                        <td style="text-align: left;">
+                             I baked a cake <strong>for</strong> her birthday. (אפיתי עוגה ליום ההולדת שלה)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nor</strong></td>
+                        <td>ולא</td>
+                        <td style="text-align: left;">
+                             Neither apples <strong>nor</strong> oranges. (לא תפוחים ולא תפוזים)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>So</strong></td>
+                        <td>לכן</td>
+                        <td style="text-align: left;">
+                             It's raining <strong>so</strong> take an umbrella. (יורד גשם, אז קח מטרייה)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Because</strong></td>
+                        <td>כי</td>
+                        <td style="text-align: left;">
+                            I stay at home <strong>because</strong> it's raining. (אני נשאר בבית כי יורד גשם)
+                    </tr>
+                    <tr>
+                        <td><strong>Although</strong></td>
+                        <td>למרות ש</td>
+                        <td style="text-align: left;">
+                            <strong>Although</strong> it is expensive it is worth it. (למרות שזה יקר זה שווה את זה)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>While</strong></td>
+                        <td>בזמן</td>
+                        <td style="text-align: left;">
+                            <strong>While</strong> I was studying my phone rang. (בזמן שלמדתי הטלפון שלי צלצל)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>If</strong></td>
+                        <td>אם</td>
+                        <td style="text-align: left;">
+                            He will call you <strong>if</strong> you need help. (הוא יתקשר אליך אם תצטרך עזרה)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Either...or</strong></td>
+                        <td>או...או</td>
+                        <td style="text-align: left;">
+                            <strong>Either</strong> yes <strong>or</strong> no. (או שכן או שלא)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Neither...nor</strong></td>
+                        <td>לא...ולא</td>
+                        <td style="text-align: left;">
+                            <strong>Neither</strong> Reuven <strong>nor</strong> Shimon participated. (לא ראובן ולא שמעון השתתפו)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</body>
+</html>

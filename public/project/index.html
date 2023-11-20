@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELL</title>
+    <link type="text/css" rel="stylesheet" href="/cssPro/project.css" nonce="">
+    <script defer src="/jsPro/project.js"></script>
+    <script defer src="/jsPro/projectReg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+</head>
+<body>
+    <div class="top-bar">
+        <img src="../imagesPro/isr.png" alt="תיאור תמונה" class="flag">
+        <img  src="../imagesPro/usa.png" alt="תיאור תמונה" class="flag">
+        לימוד השפה האנגלית
+        <img  src="../imagesPro/logo.png" alt="תיאור תמונה" class="logo">
+        <div class="menu">
+            <a href="">התחבר</a>
+           
+        </div>
+    </div>
+
+    <div class="center-browser">
+        <div class="container">
+            <div id="registrationForm">
+                
+                <div style="white-space: pre-line;">
+                    <h1 style="margin-bottom: 0;">טופס רישום</h1>
+
+                    <label for="user">Username:</label>
+                    <input type="user" id="user" />     
+                    <p id="euser" class="error"></p>   
+                    <label for="pass1">Password:</label>
+                    <input type="password" id="pass1" /> 
+                </div>
+                
+                    <button class="help-button" id="helpButton">!</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                         <span class="close"></span>סיסמה צריכה להיות בין 7 ל-15 תווים ולכלול לפחות אות גדולה, אות קטנה, ומספר <strong>!</strong>  
+                        </div> 
+                    </div>   
+               
+               <div style="white-space: pre-line;"> 
+                    <p id="epass1" class="error" style="margin-top: -30px;"></p>
+                    <label for="pass2">Repeat Password:</label>
+                    <input type="password" id="pass2" />   
+                    <p id="epass2" class="error"></p>
+                    
+                    <button class="buttonClick" onclick="formSubmit(event)">הרשם</button> 
+                </div>  
+            </div>
+        
+            <div id="loginForm" style="display: none;">
+                <form id="login-form" style="white-space: pre-line;">
+                    <h1 style="margin-bottom: 0;">התחבר</h1>
+
+                    <label for="login-user">Username:</label>
+                    <input type="text" id="login-user" placeholder="שם משתמש" />
+
+
+                    <label for="login-pass">Password:</label>
+                    <input type="password" id="login-pass" placeholder="סיסמה" />
+                    <p id="error-message" class="error"></p>
+
+                    <button class="buttonClick" id="buttonClick" type="submit">התחבר</button>  
+                </form>   
+            </div>
+    
+            <span id="toggleButton" onclick="toggleRegistration()">
+                <img id="imageElementWithButton" src="../imagesPro/login.png" alt="תיאור תמונה">    
+                <img id="imageElementWithoutButton" src="../imagesPro/signup.png" alt="תיאור תמונה" style="display: none;">
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELL</title>
+    <link type="text/css" rel="stylesheet" href="/cssPro/project.css" nonce="">
+    <script defer src="/jsPro/project.js"></script>
+    <script defer src="/jsPro/proCat.js"></script>
+    <script defer src="/jsPro/question.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+</head>
+<body>
+    <div class="top-bar">
+        <img src="../imagesPro/isr.png" alt="תיאור תמונה" class="flag">
+        <img  src="../imagesPro/usa.png" alt="תיאור תמונה" class="flag">
+        לימוד השפה האנגלית
+        <img  src="../imagesPro/logo.png" alt="תיאור תמונה" class="logo">
+        <div class="menu">
+            <a href="proCat.html">אוצר מילים</a>
+            <a href="dikduk.html">כללי דקדוק</a>
+            <a href="ind.html">chat</a>
+            <a href="project.html">התנתק</a>
+        </div>
+    </div>
+
+    <div class="center-browser" id="adminOnly">
+        <div class="ContainerAddWord">
+            <div style="padding: 10px;">
+                <label for="categori">Categori: </label>
+                <input type="text" id="categori" name="categori">
+            </div>
+
+            <div style="padding: 10px;">
+                <label for="englishword">English word: </label>
+                <input type="text" id="englishword" name="englishword">
+            </div>
+
+            <div style="padding: 10px;">
+                <label for="synonym">Synonym: </label>
+                <input type="text" id="synonym" name="synonym">
+            </div>
+            
+            <div style="padding: 10px;">
+                <label for="hebrewword">Hebrew word: </label>
+                <input type="text" id="hebrewword" name="hebrewword">
+            </div>
+    
+            <div style="padding: 10px;">
+                <label for="linkimg">Link img: </label>
+                <input type="text" id="linkimg" name="linkimg">
+            </div>
+    
+            <div style="padding: 10px;">
+                <button class="sendbutton" onclick="addword(event)">add word</button>
+            </div>
+        </div>
+    </div>
+<!--
+    <button id="updateButton">לחץ כאן לשנות מילים</button>
+-->
+
+<div id="initialContent">
+
+    <div class="center-browser">
+
+        <div class="ContainerIND">
+
+            <div class="boxS">
+                <select id="categorySelect" class="select"></select>
+                <select id="subCategorySelect" class="select" style="width: auto; border-radius:  0 5px 5px 0;  border-left: 0;"></select>
+
+                <input type="text" id="searchInput" class="searchInput" placeholder="חפש מילה..." style="margin-left: 200px;">
+                <img id="searchButton" class="searchButton" src="../imagesPro/search.png" height="31px">
+
+                <button class="buttonQuestions" id="practiceButton" style="margin-left: 20px;">שאלות</button>    
+            </div>
+
+        
+            <div class="text" style="margin-top: 20px;">
+                <div class="wordTitle">מילה באנגלית </div> 
+                <div class="wordTitle">מילה נרדפת </div> 
+                <div class="wordTitle">מילה בעברית </div>
+            
+                
+                <button id="sortButton" class="sortButton">A...z
+                    <img src="../imagesPro/sort.png" width="15px" height="15px">
+                </button>
+                <button id="resetButton" class="resetButton">
+                    <img src="../imagesPro/def.png" width="15px" height="15px">
+                </button>
+            </div>  
+            
+        
+            <div class="center-browser" style="margin-bottom: 20px;">
+                <div id="wordsList" class="word-list">  <!-- המילים יוצגו כאן -->   </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- -->
+<div id="quizContent">
+    <div class="start-screen">
+        <button id="start-button">Start</button>
+    </div>
+    
+    <div id="display-container">
+        
+            <button class="exit" id="closeButton">X</button>
+        
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 questions</span>
+            </div>
+
+            <div class="timer-div">
+                <img src="/imagesPro/timer.png" width="30px" height="30px"/>
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+
+        <div id="container">
+        <!-- questions and options will be displayed here -->
+        </div>
+
+        <button id="next-button">Next</button>
+    </div>
+
+    <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart">Restart</button>
+    </div>
+</div>
+
+    
+</body>
+</html>

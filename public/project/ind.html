@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELL</title>
+    <link type="text/css" rel="stylesheet" href="/cssPro/project.css" nonce="">
+    <script defer src="/jsPro/project.js"></script>
+    <script defer src="/jsPro/proUsers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="../imagesPro/isr.png" alt="תיאור תמונה" class="flag">
+        <img  src="../imagesPro/usa.png" alt="תיאור תמונה" class="flag">
+        לימוד השפה האנגלית
+        <img  src="../imagesPro/logo.png" alt="תיאור תמונה" class="logo">
+        <div class="menu">
+            <a href="proCat.html">אוצר מילים</a>
+            <a href="dikduk.html">כללי דקדוק</a>
+            <a href="ind.html">chat</a>
+            <a href="project.html">התנתק</a>
+        </div>
+    </div>
+    
+    <div class="center-browser" style="user-select: none;">
+        <div class="ContainerIND">
+
+                <div class="title1">
+                    <img src="../imagesPro/user.png" alt="תיאור האיקון" width="30" height="30">
+                    משתמשים רשומים
+                </div>
+                <div class="title2">
+                    מספר המשתמשים: <span id="userCount">0</span>
+                </div>
+               
+
+
+
+                <div class="title1">
+                    <img src="../imagesPro/rating.png" alt="תיאור האיקון" width="30" height="30">
+                    דרג אותי
+                </div>
+                <div class="title2">
+                    <div class="rating-container">
+                        <div class="stars" id="stars">
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="2">&#9733;</span>
+                            <span class="star" data-rating="3">&#9733;</span>
+                            <span class="star" data-rating="4">&#9733;</span>
+                            <span class="star" data-rating="5">&#9733;</span>
+                        </div>
+                        <p>הדירוג: <span id="rating-value">0</span> מתוך 5</p>
+                        <p>כמות ההצבעות: <span id="num-votes">0</span></p>
+                        <p>ממוצע הציונים: <span id="average-rating">0</span></p> 
+                    </div>
+                </div>
+                
+
+
+
+                <div class="title1">
+                    <img src="../imagesPro/chat.png" alt="תיאור האיקון" width="30" height="30">
+                    בקר אותי
+                </div>
+                <div id="chat" style="user-select: text;">
+                    <div id="chat-box"></div>
+                    <div id="input-container">
+                        
+                        <button class="buttonSend" onclick="sendMessagesAndRefresh()">שלח</button>
+                        <textarea id="messagesInput" placeholder="כתוב הודעה"></textarea>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    
+
+    <div class="kesher" style= "user-select: none;">
+        <div class="kesh"><img src="../imagesPro/email.png" alt="תיאור האיקון" width="30" height="30" style="margin-right: 15px;"> englihebrew@gmail.com</div>
+        <div class="kesh"> <img src="../imagesPro/facebook.png" alt="תיאור האיקון" width="30" height="30" style="margin-right: 15px;"> englihebrew </div>
+        <div class="kesh"> <img src="../imagesPro/insta.png" alt="תיאור האיקון" width="30" height="30" style="margin-right: 15px;"> englihebrew</div>
+    </div>
+    
+    
+      
+</body>
+</html>
